@@ -1,0 +1,47 @@
+control: 
+  model: stgcn
+  testonly: true
+  device: cuda:0
+  mdir: ./results/model/
+  logdir: ./results/log/
+  date: 2023y04m07d_run
+
+data:
+  dataset: CHI_Cri
+  val_ratio: 0.2
+  test_ratio: 0.2
+  lag: 30
+  horizon: 1
+  batch_size: 32
+  geo_graph: ./data/county/geo_geaph_county_full.cpt
+  num_nodes: 1470 
+  pre_adj: true
+  adj_th: 0.00001
+  sigma: 100
+  norm: max01
+
+training:
+  patience: 50
+  model_path: ./results/model/2022y9m5d/STID.pkl
+  mae_thresh: 0.0
+  mape_thresh: 0.0
+  lr: 0.002
+  weight_decay: 0.0001
+  # weight_decay: 0.0
+  lr_decay_ratio: 0.5
+  steps: [1, 50, 100]
+  criterion: MSE
+  max_epoch: 200
+  grad_norm: true
+  t_s_mode: t
+  start_epoch: 0
+
+model:
+# GIB
+  end_channels: 128
+  adj_type: normlap
+  in_dim: 4
+  out_dim: 4
+  
+sample:
+  is_sample: False

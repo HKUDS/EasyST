@@ -1,0 +1,1 @@
+python train_student.py --config ./config/student/dmlp_ib/pems07/stgcn/student.yaml
