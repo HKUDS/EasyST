@@ -46,7 +46,7 @@ Download the data and place it in the `data` directory, and you can directly use
 
 ## Examples to run the codes
 
-We could modify configuration at [./config](https://github.com/HKUDS/STExplainer/config) to train or test teacher and student model on different datasets. There is an example of training teacher models on three datasets [./run_teacher.sh](./run_teacher.sh): 
+We could modify configuration at [./config](./config) to train or test teacher and student model on different datasets. There is an example of training teacher models on three datasets [./run_teacher.sh](./run_teacher.sh): 
 
 ```bash
 python train_teacher.py --config ./kdstg/config/teacher/stgcn/pems07/teacher_stgcn_end_dim_128_pems7.yaml # Traffic data
