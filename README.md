@@ -1,6 +1,6 @@
 # EasyST: A Simple Framework for Spatio-Temporal Prediction
 
-This is the PyTorch implementation by <a href='https://github.com/tjb-tech'>@Jiabin Tang</a> for STExplainer model proposed in this paper:
+This is the PyTorch implementation by <a href='https://github.com/tjb-tech'>@Jiabin Tang</a> for EasyST model proposed in this paper:
 
  >**<a href='https://arxiv.org/abs/2409.06748'>EasyST: A Simple Framework for Spatio-Temporal Prediction</a>**  
  >Jiabin Tang, Wei Wei, Lianghao Xia, Chao Huang*\
